@@ -1,0 +1,390 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="p5.min.js"></script>
+  <script src="p5.dom.min.js"></script>
+  <script src="ml5.min.js" type="text/javascript"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Amarante&family=Amaranth&display=swap" rel="stylesheet">
+
+  <title>EMMA TAYLOR PAYDOS</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js"></script>
+  
+  <meta name="author" content="Taylor Paydos">
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:image" content="image.png">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <img src="">
+
+<div id="allinfo">
+    <div onclick="name()" id="name">
+    <p class="nav" id="name">EMMA TAYLOR</p>
+    </div>
+
+    <div onclick="abtme()" id="about">
+    <p class="nav" id="about">ABT ME</p>
+    </div>
+
+    <div onclick="work()" id="work">
+    <p class="nav" id="work"> WORK</p>
+    </div>
+
+    <div onclick="resume()" id="resume">
+        <p class="nav" id="resume">RESUME</p>
+        </div>
+
+</div>
+
+<div id="nameTab">
+
+<div id="nameContent">
+    <img src="content/images/friendbird.gif">
+</div>
+
+</div>
+
+<div id="aboutTab">
+    <div id="aboutContent">
+<p>I am a Creative Technologist, Filmmaker, and Educator interested in making innovative and exciting projects that make tech and art more accessible, inclusive, and ethical. I strive to do this by working collaboratively to create projects that benefit different communities and enact change. I have a focus on web development and physical computing.</p>
+<p>I work to combine film and technology to create critiques of how we navigate and use the web today. Within my film work I have been interested in how we can construct narratives using computer interfaces and the boundaries we can push within that. Within web design I have been combining film, creative coding, machine learning, and AI to create dialogues around consent and ethics online. </p>
+<p>Outside of my art based practice I am an educator and strive to make learning code more accessible and fun for people of all ages. I am often working on lesson plans and gathering resources online to help support the growth of young coders. I feel passionate about making learning to code an easy and creative experience instead of intimidating. </p>
+    </div>
+</div>
+
+<div id="workTab">
+    <div id="workContent">
+
+        <p class="titles" onclick="work1()">IS YOUR BODY BECOMING THE INTERNET</p>
+        <p id="desc1"></p>
+        <a id="link1" style="display: none;" href="https://lizard-ctrl.github.io/thesisonefinal/">View Here</a>
+
+        <p class="titles" onclick="work2()">CRITICAL CODING COOKBOOK</p>
+        <p id="desc2"></p>
+        <a id="link2" style="display: none;" href="https://parsonsdt.github.io/critical-coding-cookbook/">View Here</a>
+
+        <p class="titles" onclick="work3()"> MEDITATION ZONE</p>
+        <p id="desc3"></p>
+        <a id="link3" style="display: none;" href="https://meditationzone.herokuapp.com/index.html">View Here</a>
+
+        <p class="titles" onclick="work4()"> EDIT-A-THON</p>
+        <p id="desc4"></p>
+        <a id="link4" style="display: none;" href="https://lizard-ctrl.github.io/edit-a-thon/">View Here</a>
+
+        <p class="titles" onclick="work5()"> GOOD BOT, BAD BOT</p>
+        <p id="desc5"></p>
+        <a id="link5" style="display: none;" href="https://lizard-ctrl.github.io/mlfinal/">View Here</a>
+
+        <p class="titles" onclick="work6()"> R/HAVEWEMET</p>
+        <p id="desc6"></p>
+        <a id="link6" style="display: none;" href="https://lizard-ctrl.github.io/havewemet/">View Here</a>
+
+    </div>
+</div>
+
+<div id="resumeTab">
+    <div id="resumeContent">
+        <div class="grid-container">
+            <div class="grid-item">Experience</div>
+            <div class="grid-item">STEM Instructor</div>
+            <div class="grid-item">November to May 2022</div>  
+            <div class="grid-item">STEM after school programs instructor with iCAMP. Helped to develop new curriculum for classes and worked on organization within the company. Further developed teaching and administrative skills.</div>
+            <div class="grid-item"></div>
+            <div class="grid-item">Events Assistant Leslie Lohman</div>
+            <div class="grid-item">February to May 2022</div>  
+            <div class="grid-item">On-call events assistant for Leslie Lohman. Helped with in person programming and gallery openings. Worked to set up, breakdown, and ensure operations run smoothly.</div>
+            <div class="grid-item"></div>  
+            <div class="grid-item">Eyebeam Programs Intern</div>
+            <div class="grid-item">April to August 2021</div>  
+            <div class="grid-item">Programs intern to J Soto at NYC arts non profit Eyebeam. Helped to manage the process of selecting fellows for their upcoming residency along with doing archival work and supporting their summer education program. Gained experience and knowledge on the creative technologist community, education, and programs management.</div>
+            <div class="grid-item"></div>
+            <div class="grid-item">Research Assistant</div>  
+            <div class="grid-item">May to June 2021</div> 
+            <div class="grid-item">Research assistant to Xin Xin, an artist  in tech, at The New School. Developed and designed a website along with social media materials for their open call Critical Coding Cookbook. Also worked on their class material for Code 2 translating instructional videos into written tutorials and creating example code to put on their website.</div> 
+            <div class="grid-item">Skills</div>
+            <div class="grid-item">HTML,CSS,JavaScript, JQuery, Python, Processing, P5JS, Unity, Rhino</div>
+            <div class="grid-item">Machine Learning, Natural Language Programming, Physical Computation</div>
+            <div class="grid-item">Google Suites, Adobe Suites, Airtable, Wordpress</div>
+            <div class="grid-item">Education</div>
+            <div class="grid-item">The New School, Parsons</div>
+            <div class="grid-item">September 2017 to May 2022</div>
+            <div class="grid-item">Bachelor of Fine Arts in Design and Tech</div>
+            <div class="grid-item"></div>
+            <div class="grid-item">The New School, Eugene Lang</div>
+            <div class="grid-item">September 2017 to May 2022</div>
+            <div class="grid-item">Bachelor of Arts in Culture and Media</div>
+            <div class="grid-item">Events</div>
+            <div class="grid-item">DT Symposium</div>
+            <div class="grid-item">May 2022</div>
+            <div class="grid-item">Presented my thesis project and research on consent politics online. Was in conversation with artist Joanne McNeil and two of my other peers.</div>
+            <div class="grid-item"></div>
+            <div class="grid-item">Rednawa Venue Live Coding</div>
+            <div class="grid-item">May 2021 to August 2021</div>
+            <div class="grid-item">Experimented with live coding visuals during musicians sets. Worked to create atmospheres that matched what the artist work was like.</div>
+            <div class="grid-item"></div>
+            <div class="grid-item">Wikipedia Edit-A-Thon</div>
+            <div class="grid-item">April 2021</div>
+            <div class="grid-item">Part of a team of organizers hosting a wikipedia feminist edit-a-thon at The New School. Created web content for the event and helped to moderate the zoom call along with participating.</div>
+            <div class="grid-item"></div>
+            <div class="grid-item">A Showcase for the Personal Documentary Class I was in</div>
+            <div class="grid-item">May 2021</div>
+            <div class="grid-item">A showcase hosted by Caveh Zahedi presenting short personal documentarys picked by him and the class. Four of my pieces were shown in this exhibition and the zoom call included around eighty guests.</div>
+            <div class="grid-item"></div>
+            <div class="grid-item">.Frag Shader Show</div>
+            <div class="grid-item">June 2020</div>
+            <div class="grid-item">A exhibition of shader fragments curated by Char Stiles which included one of my pieces of work.</div>
+            <div class="grid-item"></div>
+            <div class="grid-item">Sonder Gallery</div>
+            <div class="grid-item">March 2018</div>
+            <div class="grid-item">An exhibition curated by Sonder Galleries that exhibited a group zine created by Elliot Bohlen, Miffy Hinson, and I titled Virgin City.</div>
+          </div>
+          
+    </div>
+</div>
+  
+    <script src="js/tabs.js"></script>
+ 
+   <script>
+
+
+function name() {
+  var x = document.getElementById("nameTab");
+  var a = document.getElementById("workTab");
+  var b = document.getElementById("resumeTab");
+  var c = document.getElementById("aboutTab");
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    a.style.display = "none";
+    b.style.display = "none";
+    c.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function abtme() {
+  var x = document.getElementById("nameTab");
+  var a = document.getElementById("workTab");
+  var b = document.getElementById("resumeTab");
+  var c = document.getElementById("aboutTab");
+
+  if (c.style.display === "none") {
+    c.style.display = "block";
+    x.style.display = "none";
+    b.style.display = "none";
+    a.style.display = "none";
+  } else {
+    c.style.display = "none";
+  }
+}
+
+function work() {
+  var x = document.getElementById("nameTab");
+  var a = document.getElementById("workTab");
+  var b = document.getElementById("resumeTab");
+  var c = document.getElementById("aboutTab");
+
+  if (a.style.display === "none") {
+    a.style.display = "block";
+    x.style.display = "none";
+    b.style.display = "none";
+    c.style.display = "none";
+  } else {
+    a.style.display = "none";
+  }
+}
+
+function resume() {
+  var x = document.getElementById("nameTab");
+  var a = document.getElementById("workTab");
+  var b = document.getElementById("resumeTab");
+  var c = document.getElementById("aboutTab");
+
+  if (b.style.display === "none") {
+    b.style.display = "block";
+    x.style.display = "none";
+    a.style.display = "none";
+    c.style.display = "none";
+  } else {
+    b.style.display = "none";
+  }
+}
+
+      var i = 0;
+      var txt = 'IS YOUR BODY BECOMING THE INTERNET explores consent, intimacy, and physicality while online. It is a series of experimental websites that force the user to move their body, navigate a site in unconventional ways, and be confronted with imagery and experiences that create reflection on how we spend our time online. Initially based on the phenomena of phantom touch, an experience in VR where you are able to physically feel what is happening in a virtual world, this grew to how the web and social media also affect our physical bodies. This project was research based and pulls influence from Male Renouards Fragments of an Infinite Memory, Julian Dibbells My Tiny Life, and Legacy Russells Glitch Feminism.';
+      var speed = 30;
+      
+      function write1() {
+        if (i < txt.length) {
+          document.getElementById("desc1").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(write1, speed);
+        }  
+    }
+
+    
+
+    function show1() {
+  var x = document.getElementById("link1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function work1(){
+    write1();
+    show1();
+}
+   
+    var a = 0;
+      var txt2 = 'Critical Coding Cookbook is a collaborative project led by Xin Xin and Katherine Moriwaki that was seeking work that illustrated how to interrogate, deconstruct, and decolonize, the teaching and learning of code from an intersectional feminist lens. This project is gathering resources through open calls and classrooms to organize alternative approaches to the topic of code in teaching and in practice so that we can collectively build, change, alter the way we learn and teach code. On this project I contributed to the web development and graphic design materials.';
+      var speed = 30;
+      
+      function write2() {
+        if (a < txt2.length) {
+          document.getElementById("desc2").innerHTML += txt2.charAt(a);
+          a++;
+          setTimeout(write2, speed);
+        }  
+    }
+
+    function show2() {
+  var l = document.getElementById("link2");
+  if (l.style.display === "none") {
+    l.style.display = "block";
+  } else {
+    l.style.display = "none";
+  }
+}
+
+function work2(){
+    write2();
+    show2();
+}
+   
+    var b = 0;
+      var txt3 = 'Meditation Zone is a collaborative physical computation project created to alleviate mental stress through meditation and connection. This website is meant to be used with a heart rate detector that creates animations on the site depending on your heart rate. Each page has calming animations created through P5.JS along with guided meditations and ambient music. You are able to use the site with multiple people so you can draw on the homepage together or meditate together and connect visuals. On this project I was lead web developer and helped to ideate and bring our team to our final vision.';
+      var speed = 30;
+      
+      function write3() {
+        if (b < txt3.length) {
+          document.getElementById("desc3").innerHTML += txt3.charAt(b);
+          b++;
+          setTimeout(write3, speed);
+        }  
+    }
+
+    function show3() {
+  var m = document.getElementById("link3");
+  if (m.style.display === "none") {
+    m.style.display = "block";
+  } else {
+    m.style.display = "none";
+  }
+}
+
+function work3(){
+    write3();
+    show3();
+}
+
+    var c = 0;
+      var txt4 = 'Edit-A-Thon is a webpage organized for a feminist wikipedia edit-a-thon hosted at The New School. Oftentimes female and non binary artists wikipedia pages are lacking information or have misinformation on them. Many different feminist wikipedia events are hosted to help make pages and add information for artists who are marginalized and overlooked on wikipedia. On this project I worked collaboratively with Livia Foldes to create the website and also helped organize the event.';
+      var speed = 30;
+      
+      function write4() {
+        if (c < txt4.length) {
+          document.getElementById("desc4").innerHTML += txt4.charAt(c);
+          c++;
+          setTimeout(write4, speed);
+        }  
+    }
+
+    function show4() {
+  var n = document.getElementById("link4");
+  if (n.style.display === "none") {
+    n.style.display = "block";
+  } else {
+    n.style.display = "none";
+  }
+}
+
+function work4(){
+    write4();
+    show4();
+}
+
+    var d = 0;
+      var txt5 = 'Good Bot/Bad Bot explores the ideas of consent within AI online. It showcases two different chatbots, one that is engaging you consensually and another that is not. This is a reflection on how AI can be used in different ways and also how it can be used against us.';
+      var speed = 30;
+      
+      function write5() {
+        if (d < txt5.length) {
+          document.getElementById("desc5").innerHTML += txt5.charAt(d);
+          d++;
+          setTimeout(write5, speed);
+        }  
+    }
+
+    function show5() {
+  var o = document.getElementById("link5");
+  if (o.style.display === "none") {
+    o.style.display = "block";
+  } else {
+    o.style.display = "none";
+  }
+}
+
+function work5(){
+    write5();
+    show5();
+}
+
+      var e = 0;
+      var txt6 = 'R/HaveWeMet is a digital ethnographic project based around the community R/HaveWeMet on reddit. This community is one where everyone pretends like they live in the same town even though they are miles apart. I was interested in how this community carved out physical space on the internet and created a virtual reality through text. I worked to illustrate that within my website and also developed research based writing through my time spent within the community and my readings.';
+      var speed = 30;
+      
+      function write6() {
+        if (e < txt6.length) {
+          document.getElementById("desc6").innerHTML += txt6.charAt(e);
+          e++;
+          setTimeout(write6, speed);
+        }  
+    }
+    function show6() {
+  var r = document.getElementById("link6");
+  if (r.style.display === "none") {
+    r.style.display = "block";
+  } else {
+    r.style.display = "none";
+  }
+}
+
+function work6(){
+    write6();
+    show6();
+}
+
+   </script>
+
+
+</body>
+</html>
